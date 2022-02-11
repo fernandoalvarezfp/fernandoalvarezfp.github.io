@@ -201,7 +201,7 @@ foreach($i in 1..10)
 #### Pista Viernes
 ``` ps1
 $repeticiones = Read-Host "¿Cuantas repiticiones desea realizar?"
-$i = 0
+$i = 1
 while ($i -le $repeticiones)
 {
 	Write-Host "Hola"
