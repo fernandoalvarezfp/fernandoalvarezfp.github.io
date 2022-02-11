@@ -46,6 +46,9 @@ $segundoNumero = $args[1]
 $tercerNumero = $args[2]
 ```
 
+!!! tip
+    Podemos obtener el número de argumentos que recibe nuestro script utilizando ```$args.length```
+
 ### Operadores de comparación
 Estos operadores los utilizaremos tanto en las sentencias condicionales como en los bucles:
 
@@ -194,4 +197,3 @@ foreach($i in 1..10)
     $i
 }
 ```
-Cambio
