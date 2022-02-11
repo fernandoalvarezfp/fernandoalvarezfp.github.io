@@ -197,3 +197,14 @@ foreach($i in 1..10)
     $i
 }
 ```
+
+#### Pista Viernes
+``` ps1
+$repeticiones = Read-Host "¿Cuantas repiticiones desea realizar?"
+$i = 0
+while ($i -le $repeticiones)
+{
+	Write-Host "Hola"
+	i++
+}
+```
