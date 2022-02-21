@@ -46,9 +46,6 @@ $segundoNumero = $args[1]
 $tercerNumero = $args[2]
 ```
 
-!!! tip
-    Podemos obtener el número de argumentos que recibe nuestro script utilizando ```$args.length```
-
 ### Operadores de comparación
 Estos operadores los utilizaremos tanto en las sentencias condicionales como en los bucles:
 
@@ -198,13 +195,58 @@ foreach($i in 1..10)
 }
 ```
 
-#### Pista Viernes
-``` ps1
-$repeticiones = Read-Host "¿Cuantas repiticiones desea realizar?"
-$i = 1
-while ($i -le $repeticiones)
-{
-	Write-Host "Hola"
-	i++
-}
+### Funciones de cadenas de caracteres
+#### Length
+Muestra la longitud de una cadena de caracteres
+```ps1
+$c = 'casa'
+$c.length
+4
 ```
+
+#### IndexOf
+Muestra la posición de la primera ocurrencia de un carácter dentro de una cadena de texto. En caso de que el carácter no esté dentro de la cadena de texto devuelve -1.
+```ps1
+$c = 'casa'
+$c.indexOf('c')
+0
+$c.indexOf('s')
+2
+$c.indexOf('w')
+-1
+```
+
+#### Replace
+Reemplaza una sección de una cadena de caracteres por otra.
+```ps1
+$c = 'casa'
+$c.replace('ca','pa')
+pasa
+```
+
+#### Insert
+Introduce en una posición de una cadena de texto, otra cadena de texto.
+```ps1
+$c = 'casa'
+$c.insert(4.'s')
+casas
+```
+
+#### Equals 
+Evalúa si una cadena de caracteres es igual a otra. Devuelve los valores booleanos True o False.
+```ps1
+$c = 'casa'
+$c1 = 'casa'
+$c2 = 'pasa'
+$c.equals('casa')
+True
+$c.equals('pasa')
+False
+$c.equals($c2)
+False
+$c.equals($c1)
+True
+```
+
+#### Split y Substring
+Lo veremos en próximos capítulos.
