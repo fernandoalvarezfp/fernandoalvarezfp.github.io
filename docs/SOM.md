@@ -61,6 +61,32 @@ Estos operadores los utilizaremos tanto en las sentencias condicionales como en 
 
 **-ne** (not equal to): no es igual a
 
+### Operaciones lógicas
+
+**-and** Permite relacionar varios predicados condicionales. Para que el predicado global sea verdadero, tienen que ser verdaderos todos los predicados relacionados.
+``` ps1
+if ( ($num1 -gt 5) -and ($num2 -gt 5) )
+{
+    Write-Host "Los dos números son mayores que 5"
+}
+```
+
+**-or** Permite relacionar varios predicados condicionales. Para que el predicado global sea verdadero, tiene que ser verdadero, al menos uno de los predicados relacionados.
+``` ps1
+if ( ($num1 -gt 5) -or ($num2 -gt 5) )
+{
+    Write-Host "Al menos uno de los dos números son mayores que 5"
+}
+```
+
+**-not** Permite negar predicados condicionales.
+``` ps1
+if ( -not($num -gt 5) )
+{
+    Write-Host "El número no es mayor que 5"
+}
+```
+
 ### Sentencias condicionales
 
 #### IF
@@ -195,6 +221,24 @@ foreach($i in 1..10)
 }
 ```
 
+### Función random
+La función Get-Random nos permite obtener valores aleatorios.
+
+``` ps1
+#Obtener un número aleatorio entre 0 y 100
+Get-Random -Minimum 0 -Maximum 100
+```
+
+``` ps1
+#Obtener dos colores aleatorios de la lista
+'verde', 'amarillo', 'rojo', 'azul', 'negro', 'blanco' | Get-Random -Count 2
+```
+
+``` ps1
+#Reorganiza de forma aleatoria toda la lista de colores
+'verde', 'amarillo', 'rojo', 'azul', 'negro', 'blanco' | Get-Random -Shuffle
+```
+
 ### Funciones de cadenas de caracteres
 #### Length
 Muestra la longitud de una cadena de caracteres
@@ -250,3 +294,137 @@ True
 
 #### Split y Substring
 Lo veremos en próximos capítulos.
+
+## Ejercicios resueltos
+
+### Contador de 1 a 10 utilizando el bucle WHILE
+```ps1
+$i = 1
+while($i -le 10)
+{
+    Write-Host($i) 
+    $i++
+}
+```
+
+### Sensor de temperatura con ELSEIF
+```ps1
+[int]$temp = Read-Host "Por favor, introduzca la temperatura"
+if ($temp -le 10)
+{
+    Write-Host "Frío"
+}
+elseif ($temp -gt 10 -and $temp -le 18)
+{
+    Write-Host "Fresquito"
+}
+elseif ($temp -gt 18 -and $temp -le 24)
+{
+    Write-Host "Temperatura agradable"
+}
+else
+{
+    Write-Host "Calor"
+}
+```
+
+### Semáforo con SWITCH
+```ps1
+$color = $args[0]
+switch($color)
+{
+    'verde'
+    {
+        Write-Host "Pasar"
+        break
+    }
+    'amarillo'
+    {
+        Write-Host "Precaución"
+        break
+    }
+    'rojo'
+    {
+        Write-Host "Parar"
+        break
+    }
+    default
+    {
+        Write-Host "Color inválido"
+    }
+}
+```
+
+### Recorrer una lista utilizando el bucle FOR
+```ps1
+$frutas = 'fresa', 'manzana', 'platano', 'melon', 'naranja', 'limon'
+for ($i=0; $i -lt $frutas.length; $i++)
+{
+    Write-Host $frutas[$i]
+}
+```
+
+### Obtener N elementos de una lista de manera aleatoria
+```ps1
+$frutas = 'fresa', 'manzana', 'platano', 'melon', 'naranja', 'limon'
+[int]$numFrutas = Read-Host "¿Cuántas frutas quiere?"
+$frutas | Get-Random -Count $numFrutas
+```
+
+### Comprobar si una letra está presente en una palabra
+```ps1
+$palabra = 'casa'
+$letra = Read-Host "Por favor, introduzca una letra"
+if ($palabra.IndexOf($letra) -ne -1 )
+{
+    Write-Host "La letra está presente en la palabra"
+}
+else
+{
+    Write-Host "La letra NO está presente en la palabra"    
+}
+```
+
+### Eliminar de una lista las palabras que comienzan por vocal
+```ps1
+$alumnos = 'Iker', 'Desirée', 'Andrei', 'Pablo', 'Aitor', 'Manuel', 'Mario', 'Daniel', 'Edwar', 'Nicolás'
+$alumno
+$pl=''
+$lista = ''
+for ($i=0; $i -lt $alumnos.length; $i++)
+{
+	$alumno = $alumnos[$i]
+	$pl = $alumno[0]
+	if ($pl -eq 'a' -or $pl -eq 'e' -or $pl -eq 'i' -or $pl -eq 'o' -or $pl -eq 'u')
+	{
+		$alumnos[$i] = '----'
+	}
+	$lista = $lista + $alumno + ' '
+}
+$lista
+```
+
+### Mostrar los personajes cuyo nombre y apellido comienzan por la misma letra
+```ps1
+$personajes = 'Peter Parker', 'Hercule Poirot', 'Stephen Strange', 'Harry Potter', 'Reed Richards', 'Matt Murdock', 'Oliver Twist'
+$personaje = ''
+$espacio = -1
+$primeraLetraNombre = ''
+
+for ($i=0;$i -lt $personajes.length;$i++)
+{
+	$personaje = $personajes[$i]
+	$primeraLetraNombre = $personaje[0]
+	for ($j = 0; $j -lt $personaje.length; $j++)
+	{
+		if ($personaje[$j] -eq ' ')
+		{
+				$espacio = $j
+		}
+	}
+	if ($primeraLetraNombre -eq $personaje[$espacio + 1])
+	{
+		Write-Host $personaje
+	}
+}
+```
