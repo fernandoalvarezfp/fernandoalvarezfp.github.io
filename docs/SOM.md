@@ -476,8 +476,7 @@ for ($i = 15;$i -gt 0;$i--)
 	Write-Host $i
 }
 ```
-### **Pregunta 5 -** Script que muestre únicamente las palabras en plural (terminan por la letra s) de la siguiente lista:
-casa, aceitunas, verdura, futbolista, pilas, cosas
+### **Pregunta 5 -** Script que muestre únicamente las palabras en plural (terminan por la letra s) de la siguiente lista: casa, aceitunas, verdura, futbolista, pilas, cosas
 ``` ps1
 $lista = 'casa', 'aceitunas', 'verdura', 'futbolista', 'pilas', 'cosas'
 for($i = 0; $i -lt $lista.length; $i++)
