@@ -388,20 +388,16 @@ else
 ### Eliminar de una lista las palabras que comienzan por vocal
 ```ps1
 $alumnos = 'Iker', 'Desirée', 'Andrei', 'Pablo', 'Aitor', 'Manuel', 'Mario', 'Daniel', 'Edwar', 'Nicolás'
-$alumno
-$pl=''
-$lista = ''
 for ($i=0; $i -lt $alumnos.length; $i++)
 {
-	$alumno = $alumnos[$i]
-	$pl = $alumno[0]
-	if ($pl -eq 'a' -or $pl -eq 'e' -or $pl -eq 'i' -or $pl -eq 'o' -or $pl -eq 'u')
-	{
-		$alumnos[$i] = '----'
-	}
-	$lista = $lista + $alumno + ' '
+    $alumno = $alumnos[$i]
+    $pl = $alumno[0]
+    if ($pl -eq 'a' -or $pl -eq 'e' -or $pl -eq 'i' -or $pl -eq 'o' -or $pl -eq 'u')
+    {
+        $alumnos[$i] = '----'
+    }
 }
-$lista
+$alumnos
 ```
 
 ### Mostrar los personajes cuyo nombre y apellido comienzan por la misma letra
@@ -425,6 +421,71 @@ for ($i=0;$i -lt $personajes.length;$i++)
 	if ($primeraLetraNombre -eq $personaje[$espacio + 1])
 	{
 		Write-Host $personaje
+	}
+}
+```
+
+## Examen 07/03/2022
+
+### **Pregunta 1 -** Escribe un script que reciba 3 argumentos (utiliza $args): Le preguntará al usuari@ su nombre y apellidos y se lo mostrará por pantalla con el siguiente formato: apellido1 apellido2, nombre
+```ps1
+Write-Host $args[1] $args[2]','$args[0]
+```
+(Alternativa) Utilizando Read-Host y 3 variables
+```ps1
+$nombre = Read-Host "Introduzca su nombre"
+$apell1 = Read-Host "Introduzca 1er apellido"
+$apell2 = Read-Host "Introduzca 2º apellido"
+Write-Host $apell1 $apell2', '$nombre
+```
+
+### **Pregunta 2 -** Escribe un script que genere un número aleatorio entre 0 y 50. Si el número resultante es 10 20 30 o 40 escribe “¡Has tenido suerte!”
+```ps1
+$num = Get-Random -Minimum 0 -Maximum 50
+if ($num -eq 10 -or $num -eq 20 -or $num -eq 30 -or $num -eq 40)
+{
+	Write-Host "Has tenido suerte"	
+}
+```
+
+### **Pregunta 3 -** Escribe un script calculadora en el que declares 2 variables (serán los operandos) y admita un argumento para seleccionar el tipo de operación a realizar mediante la estructura switch. El/la usuari@ puede elegir entre la operación de suma y la de multiplicación.
+
+``` ps1
+$op1 = 2
+$op2 = 3
+$op = $args[0]
+switch($op)
+{
++
+	{
+		Write-Host ($op1 + $op2)
+		break
+	}
+*
+	{
+		Write-Host ($op1 * $op2)
+		break
+	}
+}
+```
+
+### **Pregunta 4 -** Escribe un script que muestre los números del 15 al 1(orden descendente) mediante un bucle.
+``` ps1
+for ($i = 15;$i -gt 0;$i--)
+{
+	Write-Host $i
+}
+```
+### **Pregunta 5 -** Script que muestre únicamente las palabras en plural (terminan por la letra s) de la siguiente lista:
+casa, aceitunas, verdura, futbolista, pilas, cosas
+``` ps1
+$lista = 'casa', 'aceitunas', 'verdura', 'futbolista', 'pilas', 'cosas'
+for($i = 0; $i -lt $lista.length; $i++)
+{
+	$palabra = $lista[$i]
+	if ($palabra[$palabra.length-1] -eq 's')
+	{
+		Write-Host $palabra	
 	}
 }
 ```
