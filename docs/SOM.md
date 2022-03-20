@@ -488,3 +488,27 @@ for($i = 0; $i -lt $lista.length; $i++)
 	}
 }
 ```
+## Ejercicios repaso recuperación 21/03/2022
+
+### 1. Script que pinte todos los argumentos mediante un bucle con la siguiente salida:
+Argumento 1 - valorArgumento1
+Argumento 2 - valorArgumento2
+Argumento 3 - valorArgumento3
+Argumento N - valorArgumentoN
+
+### 2. Crea una lista con las letras del abecedario:
+- En una primera versión: Muestra la primera, la quinta y la octava letra.
+En una segunda versión:
+- Pregúntale al usuari@ cuantas letras aleatorias quiere obtener. 
+- Si alguna de las letras obtenidas es una vocal, muestra el siguiente mensaje: Has tenido suerte!
+
+### 3. Crea un script que convierta una nota numérica a formato texto:
+- Si la nota es menor que 5 - Escribe suspenso
+- Si la nota es mayor o igual a 5 y menor que 6 - Escribe aprobado
+- Si la nota es mayor o igual a 6 y menor que 7 - Escribe bien
+- Si la nota es mayor o igual a 7 y menor que 9 - Escribe notable
+- Si la nota es mayor o igual a 9 y menor que 10 - Escribe sobresaliente
+- Si la nota es igual a 10 - Escribe Matrícula de honor
+- Si la nota está fuera de estos rangos - Escribe valor inválido
+
+### 4. Crea un script que contenga un bucle que muestre los números impares del 1 al 19
