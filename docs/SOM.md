@@ -626,4 +626,4 @@ Paso 2:
 1. Seleccionamos el usuario con el que queremos compartir la carpeta.
 2. Clickamos en el botón agregar.
 3. Clickamos en el botón compartir.  
-4. ![Compartir carpeta imagen 2](../img/12.PNG)
+![Compartir carpeta imagen 2](../img/12.PNG)
