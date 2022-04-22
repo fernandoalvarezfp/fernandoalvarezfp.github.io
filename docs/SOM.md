@@ -557,10 +557,10 @@ Muestra la fecha actual en distintos formatos
 
 #### Ejercicio resuelto
 1. Crea la carpeta ejercicioRepaso en el escritorio con el siguiente contenido:
-	* uno.txt
-	* dos.html
-	* tres.txt
-	* cuatro.html
+uno.txt
+dos.html
+tres.txt
+cuatro.html
 ```ps1
 New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso -ItemType "directory"
 New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso\uno.txt -ItemType "file"
