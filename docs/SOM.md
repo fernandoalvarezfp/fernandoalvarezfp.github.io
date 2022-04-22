@@ -556,10 +556,10 @@ Muestra la fecha actual en distintos formatos
 [Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.2)
 
 #### Ejercicio resuelto
-1. Crea la carpeta ejercicioRepaso en el escritorio con el siguiente contenido:\
-uno.txt\
-dos.html\
-tres.txt\
+1. Crea la carpeta ejercicioRepaso en el escritorio con el siguiente contenido:  
+uno.txt  
+dos.html  
+tres.txt  
 cuatro.html
 ```ps1
 New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso -ItemType "directory"
