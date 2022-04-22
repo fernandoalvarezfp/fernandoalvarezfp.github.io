@@ -514,6 +514,78 @@ En una segunda versión:
 ### 4. Crea un script que contenga un bucle que muestre los números impares del 1 al 19
 
 ## Comandos Powershell
+
 ### New-Item
 Nos permite crear ficheros ```-ItemType "file"``` y carpetas ```-ItemType "directory"``` especificando la ruta del nuevo elemento mediante -Path.
 [Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.2#example-1-create-a-file-in-the-current-directory)
+
+### Remove-Item
+Permite eliminar ficheros y carpetas.
+[Ejemplos](https://docs.microsoft.com/es-es/powershell/scripting/samples/manipulating-items-directly?view=powershell-7.2#deleting-items-remove-item)
+
+### Copy-Item
+Permite copiar ficheros y carpetas en nuestro sistema de archivos.
+[Ejemplos](https://docs.microsoft.com/es-es/powershell/scripting/samples/manipulating-items-directly?view=powershell-7.2#copying-items-copy-item)
+
+### Move-Item
+Permite mover ficheros y carpetas en nuestro sistema de archivos.
+[Ejemplos](https://docs.microsoft.com/es-es/powershell/scripting/samples/manipulating-items-directly?view=powershell-7.2#moving-items-move-item)
+
+### Compress-Archive
+Nos permite comprimir archivos y carpetas.
+[Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/compress-archive?view=powershell-7.2#example-3-compress-a-directory-that-includes-the-root-directory)
+
+### Expand-Archive
+Nos permite descomprimir archivos .zip.
+[Ejemplo](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-7.2#example-2-extract-the-contents-of-an-archive-in-the-current-folder)
+
+### Add-Content
+Nos permite añadir texto ```-Value``` a un fichero ```-Path```.
+[Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/add-content?view=powershell-7.2)
+
+### Get-Content
+Permite visualizar el contenido de un fichero de texto.
+[Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.2)
+
+### Clear-Content
+Permite eliminar el contenido de un fichero de texto.
+[Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/clear-content?view=powershell-7.2)
+
+### Get-Date
+Muestra la fecha actual en distintos formatos
+[Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.2)
+
+#### Ejercicio resuelto
+1. Crea la carpeta ejercicioRepaso en el escritorio con el siguiente contenido:
+- uno.txt
+- dos.html
+- tres.txt
+- cuatro.html
+```ps1
+New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso -ItemType "directory"
+New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso\uno.txt -ItemType "file"
+New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso\dos.html -ItemType "file"
+New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso\tres.txt -ItemType "file"
+New-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso\cuatro.html -ItemType "file"
+```
+2. Crea una carpeta en Documentos llamada web y copia los archivos .html de ejercicioRepaso a esta nueva carpeta:
+```ps1
+New-Item -Path C:\Users\usuario\Documents\web -ItemType "directory"
+Copy-Item -Path C:\Users\usuario\Desktop\ejercicioRepaso\*.html -Destination C:\Users\usuario\Documents\web
+```
+3. Comprime la carpeta web en Documentos:
+```ps1
+Compress-Archive -Path C:\Users\usuario\Documents\web\* -DestinationPath C:\Users\usuario\Documents\web.zip
+```
+4. Mueve la carpeta web.zip de Documentos a Escritorio:
+```ps1
+Move-Item -Path C:\Users\usuario\Documents\web.zip -Destination C:\Users\usuario\Desktop
+```
+5. Elimina la carpeta web (y todo su contenido) de Documentos:
+```ps1
+Remove-Item C:\Users\usuario\Documents\web -Recurse
+```
+6. Descomprime web.zip (en el Escritorio):
+```ps1
+Expand-Archive -Path C:\Users\usuario\Desktop\web.zip -DestinationPath C:\Users\usuario\Desktop\web
+```
