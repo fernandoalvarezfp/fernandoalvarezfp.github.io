@@ -606,5 +606,14 @@ $opcion = Read-Host "Seleccione una opción"
     }
 }
 ```
-### Ejemplo imagen
-![text](../img/1.PNG)
+### Creación de una cuenta de usuario en W10
+Paso 1:
+![Cuenta usuario imagen 1](../img/1.PNG)
+Paso 2:
+![Cuenta usuario imagen 2](../img/2.PNG)
+Paso 3:
+![Cuenta usuario imagen 3](../img/3.PNG)
+Paso 4:
+![Cuenta usuario imagen 4](../img/4.PNG)
+Paso 5:
+![Cuenta usuario imagen 5](../img/5.PNG)
