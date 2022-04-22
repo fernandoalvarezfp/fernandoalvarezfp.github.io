@@ -617,3 +617,13 @@ Paso 4:
 ![Cuenta usuario imagen 4](../img/4.PNG)
 Paso 5:
 ![Cuenta usuario imagen 5](../img/5.PNG)
+
+### Compartir una carpeta en W10
+Paso 1:
+Click derecho ratón encima de la carpeta a compartir -> Propiedades
+![Compartir carpeta imagen 1](../img/11.PNG)
+Paso 2:
+1. Seleccionamos el usuario con el que queremos compartir la carpeta.
+2. Clickamos en el botón agregar.
+3. Clickamos en el botón compartir.
+![Compartir carpeta imagen 2](../img/12.PNG)
