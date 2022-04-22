@@ -606,3 +606,5 @@ $opcion = Read-Host "Seleccione una opción"
     }
 }
 ```
+### Ejemplo imagen
+![text](../img/1.PNG)
