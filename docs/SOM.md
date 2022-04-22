@@ -589,3 +589,19 @@ Remove-Item C:\Users\usuario\Documents\web -Recurse
 ```ps1
 Expand-Archive -Path C:\Users\usuario\Desktop\web.zip -DestinationPath C:\Users\usuario\Desktop\web
 ```
+### Ejemplo de menú simple en PowerShell
+```ps1
+[int]$opcion = -1
+while ($opcion -ne 4) {
+Write-Host "1. Opción 1"
+Write-Host "2. Opción 2"
+Write-Host "3. Opción 3"
+Write-Host "4. Salir"
+$opcion = Read-Host "Seleccione una opción"
+    switch ($opcion) {
+        1{Write-Host "Seleccionaste la opcion 1"}
+        2{Write-Host "Seleccionaste la opcion 2"}
+        3{Write-Host "Seleccionaste la opcion 3"}
+        4{Write-Host "Saliendo del script..."}
+    }
+}```
