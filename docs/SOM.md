@@ -516,4 +516,4 @@ En una segunda versión:
 ## Comandos Powershell
 ### New-Item
 Nos permite crear ficheros (-ItemType "file") y carpetas(-ItemType "directory") especificando la ruta del nuevo elemento mediante -Path.
-https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.2#example-1-create-a-file-in-the-current-directory
+[Ejemplos](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.2#example-1-create-a-file-in-the-current-directory)
