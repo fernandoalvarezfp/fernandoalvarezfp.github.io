@@ -604,4 +604,5 @@ $opcion = Read-Host "Seleccione una opción"
         3{Write-Host "Seleccionaste la opcion 3"}
         4{Write-Host "Saliendo del script..."}
     }
-}```
+}
+```
