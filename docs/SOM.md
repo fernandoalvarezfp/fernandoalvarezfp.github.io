@@ -664,7 +664,7 @@ ls -l
 ```bash
 sudo chmod NNN nombreArchivo/nombreCarpeta
 ```
-https://linuxize.com/post/chmod-command-in-linux/#numeric-method  
+[Explicación + Ejemplos](https://linuxize.com/post/chmod-command-in-linux/#numeric-method)
 En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R
 
 ### Establecer el usuario propietario de un archivo/carpeta 
@@ -678,3 +678,6 @@ En caso de querer utilizar este comando con una carpeta, debemos incluir el argu
 sudo chgrp nombreGrupo nombreArchivo/nombreCarpeta
 ```
 En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R
+
+### Programador de tareas de Linux
+[Explicación + Ejemplos](https://linuxize.com/post/scheduling-cron-jobs-with-crontab/)
