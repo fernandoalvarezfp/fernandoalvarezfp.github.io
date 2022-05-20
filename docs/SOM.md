@@ -627,3 +627,20 @@ Paso 2:
 2. Clickamos en el botón agregar.  
 3. Clickamos en el botón compartir.  
 ![Compartir carpeta imagen 2](../img/12.PNG)
+
+## Ubuntu
+### Creación de un grupo en Linux
+```sh
+sudo groupadd nombreGrupo
+```
+Podemos consultar los grupos existentes en nuestra sistema en /etc/group
+### Creación de un usuario en Linux
+```sh
+sudo useradd -m nombreUsuario -G nombreGrupo -s /bin/bash
+```
+Parámetros opcionales:
+-m crea una carpeta home para el nuevo usuario en /home/nombreUsuario
+-G añade al usuario recién creado a un grupo que exista en el sistema
+-s Estable la terminal por defecto del usuario
+
+Podemos consultar los usuarios existentes en nuestra sistema en /etc/passwd
