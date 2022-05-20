@@ -664,17 +664,17 @@ ls -l
 ```bash
 sudo chmod NNN nombreArchivo/nombreCarpeta
 ```
-https://linuxize.com/post/chmod-command-in-linux/#numeric-method
-En caso de querer utilizar este comando con carpetas, debemos incluir el argumento -R
+https://linuxize.com/post/chmod-command-in-linux/#numeric-method  
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R
 
 ### Establecer el usuario propietario de un archivo/carpeta 
 ```bash
 sudo chown nombreUsuario nombreArchivo/nombreCarpeta
 ```
-En caso de querer utilizar este comando con carpetas, debemos incluir el argumento -R
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R
 
 ### Establecer el grupo propietario de un archivo/carpeta
 ```bash
 sudo chgrp nobmreGrupo nombreArchivo/nombreCarpeta
 ```
-En caso de querer utilizar este comando con carpetas, debemos incluir el argumento -R
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R
