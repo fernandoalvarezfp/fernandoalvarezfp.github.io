@@ -638,9 +638,8 @@ Podemos consultar los grupos existentes en nuestra sistema en /etc/group
 ```bash
 sudo useradd -m nombreUsuario -G nombreGrupo -s /bin/bash
 ```
-Parámetros opcionales: 
-* ```-m``` crea una carpeta home para el nuevo usuario en /home/nombreUsuario 
-* ```-G``` añade al usuario recién creado a un grupo que exista en el sistema 
-* ```-s``` Estable la terminal por defecto del usuario
-
+Parámetros opcionales:
+- ```-m``` crea una carpeta home para el nuevo usuario en /home/nombreUsuario 
+- ```-G``` añade al usuario recién creado a un grupo que exista en el sistema 
+- ```-s``` Estable la terminal por defecto del usuario 
 Podemos consultar los usuarios existentes en nuestra sistema en /etc/passwd
