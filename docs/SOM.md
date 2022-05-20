@@ -634,6 +634,7 @@ Paso 2:
 sudo groupadd nombreGrupo
 ```
 Podemos consultar los grupos existentes en nuestra sistema en /etc/group
+
 ### Creación de un usuario en Linux
 ```bash
 sudo useradd -m nombreUsuario -G nombreGrupo -s /bin/bash
@@ -643,3 +644,37 @@ Parámetros opcionales:
 ```-G``` añade al usuario recién creado a un grupo que exista en el sistema  
 ```-s``` Estable la terminal por defecto del usuario   
 Podemos consultar los usuarios existentes en nuestra sistema en /etc/passwd
+
+#### Establecer la contraseña
+```bash
+sudo passwd nombreUsuario
+```
+
+#### Añadir un usuario a un grupo
+```bash
+sudo usermod -aG nombreGrupo nombreusuario
+```
+
+### Listar los permisos de los archivos/carpetas contenidos en el directorio actual
+```bash
+ls -l
+```
+
+### Establecer los permisos de un archivo/carpeta
+```bash
+sudo chmod NNN nombreArchivo/nombreCarpeta
+```
+https://linuxize.com/post/chmod-command-in-linux/#numeric-method
+En caso de querer utilizar este comando con carpetas, debemos incluir el argumento -R
+
+### Establecer el usuario propietario de un archivo/carpeta 
+```bash
+sudo chown nombreUsuario nombreArchivo/nombreCarpeta
+```
+En caso de querer utilizar este comando con carpetas, debemos incluir el argumento -R
+
+### Establecer el grupo propietario de un archivo/carpeta
+```bash
+sudo chgrp nobmreGrupo nombreArchivo/nombreCarpeta
+```
+En caso de querer utilizar este comando con carpetas, debemos incluir el argumento -R
