@@ -675,6 +675,6 @@ En caso de querer utilizar este comando con una carpeta, debemos incluir el argu
 
 ### Establecer el grupo propietario de un archivo/carpeta
 ```bash
-sudo chgrp nobmreGrupo nombreArchivo/nombreCarpeta
+sudo chgrp nombreGrupo nombreArchivo/nombreCarpeta
 ```
 En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R
