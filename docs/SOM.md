@@ -629,6 +629,48 @@ Paso 2:
 ![Compartir carpeta imagen 2](../img/12.PNG)
 
 ## Ubuntu
+
+### Creación de una carpeta
+```bash
+mkdir nombreCarpeta
+```
+
+### Creación de un documento
+```bash
+touch nombreDocumento
+```
+
+### Eliminación de un documento/carpeta
+```bash
+rm nombreDocumento
+```
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R
+
+### Copiar documento/carpeta
+```bash
+cp rutaOrigen rutaDestino
+```
+
+### Mover documento/carpeta
+```bash
+mv rutaOrigen rutaDestino
+```
+
+### Comprimir archivos/carpetas
+```bash
+tar czf rutaDestino.tar.gz rutaOrigen/*
+```
+
+### Descomprimir archivos con extensión .tar.gz en el directorio actual
+```bash
+tar xf rutaFicheroComprimido
+```
+
+### Descomprimir archivos con extensión .tar.gz en una ruta determinada
+```bash
+tar xfC rutaFicheroComprimido rutaDestino
+```
+
 ### Creación de un grupo en Linux
 ```bash
 sudo groupadd nombreGrupo
