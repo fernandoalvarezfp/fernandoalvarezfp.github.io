@@ -1,0 +1,2150 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>SOM - Módulos FP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#som" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Módulos FP" class="md-header__button md-logo" aria-label="Módulos FP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Módulos FP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SOM
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Módulos FP" class="md-nav__button md-logo" aria-label="Módulos FP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Módulos FP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          SOM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        SOM
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#programacion-estructurada-en-powershell" class="md-nav__link">
+    Programación estructurada en PowerShell
+  </a>
+  
+    <nav class="md-nav" aria-label="Programación estructurada en PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaracion-de-variables" class="md-nav__link">
+    Declaración de variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-y-salida" class="md-nav__link">
+    Entrada y salida
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argumentos-de-llamada-a-un-script-ps1" class="md-nav__link">
+    Argumentos de llamada a un script .ps1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-de-comparacion" class="md-nav__link">
+    Operadores de comparación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operaciones-logicas" class="md-nav__link">
+    Operaciones lógicas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentencias-condicionales" class="md-nav__link">
+    Sentencias condicionales
+  </a>
+  
+    <nav class="md-nav" aria-label="Sentencias condicionales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    IF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    IF-ELSE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elseif" class="md-nav__link">
+    ELSEIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch" class="md-nav__link">
+    SWITCH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bucles-sentencias-de-repeticion" class="md-nav__link">
+    Bucles (Sentencias de repetición)
+  </a>
+  
+    <nav class="md-nav" aria-label="Bucles (Sentencias de repetición)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#while" class="md-nav__link">
+    WHILE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-while" class="md-nav__link">
+    DO-WHILE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for" class="md-nav__link">
+    FOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foreach" class="md-nav__link">
+    FOREACH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-random" class="md-nav__link">
+    Función random
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funciones-de-cadenas-de-caracteres" class="md-nav__link">
+    Funciones de cadenas de caracteres
+  </a>
+  
+    <nav class="md-nav" aria-label="Funciones de cadenas de caracteres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#length" class="md-nav__link">
+    Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexof" class="md-nav__link">
+    IndexOf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace" class="md-nav__link">
+    Replace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insert" class="md-nav__link">
+    Insert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equals" class="md-nav__link">
+    Equals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-y-substring" class="md-nav__link">
+    Split y Substring
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-resueltos" class="md-nav__link">
+    Ejercicios resueltos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios resueltos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contador-de-1-a-10-utilizando-el-bucle-while" class="md-nav__link">
+    Contador de 1 a 10 utilizando el bucle WHILE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-de-temperatura-con-elseif" class="md-nav__link">
+    Sensor de temperatura con ELSEIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semaforo-con-switch" class="md-nav__link">
+    Semáforo con SWITCH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recorrer-una-lista-utilizando-el-bucle-for" class="md-nav__link">
+    Recorrer una lista utilizando el bucle FOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-n-elementos-de-una-lista-de-manera-aleatoria" class="md-nav__link">
+    Obtener N elementos de una lista de manera aleatoria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-si-una-letra-esta-presente-en-una-palabra" class="md-nav__link">
+    Comprobar si una letra está presente en una palabra
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-de-una-lista-las-palabras-que-comienzan-por-vocal" class="md-nav__link">
+    Eliminar de una lista las palabras que comienzan por vocal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-los-personajes-cuyo-nombre-y-apellido-comienzan-por-la-misma-letra" class="md-nav__link">
+    Mostrar los personajes cuyo nombre y apellido comienzan por la misma letra
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examen-07032022" class="md-nav__link">
+    Examen 07/03/2022
+  </a>
+  
+    <nav class="md-nav" aria-label="Examen 07/03/2022">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-1-escribe-un-script-que-reciba-3-argumentos-utiliza-args-le-preguntara-al-usuari-su-nombre-y-apellidos-y-se-lo-mostrara-por-pantalla-con-el-siguiente-formato-apellido1-apellido2-nombre" class="md-nav__link">
+    Pregunta 1 - Escribe un script que reciba 3 argumentos (utiliza $args): Le preguntará al usuari@ su nombre y apellidos y se lo mostrará por pantalla con el siguiente formato: apellido1 apellido2, nombre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-2-escribe-un-script-que-genere-un-numero-aleatorio-entre-0-y-50-si-el-numero-resultante-es-10-20-30-o-40-escribe-has-tenido-suerte" class="md-nav__link">
+    Pregunta 2 - Escribe un script que genere un número aleatorio entre 0 y 50. Si el número resultante es 10 20 30 o 40 escribe “¡Has tenido suerte!”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-3-escribe-un-script-calculadora-en-el-que-declares-2-variables-seran-los-operandos-y-admita-un-argumento-para-seleccionar-el-tipo-de-operacion-a-realizar-mediante-la-estructura-switch-ella-usuari-puede-elegir-entre-la-operacion-de-suma-y-la-de-multiplicacion" class="md-nav__link">
+    Pregunta 3 - Escribe un script calculadora en el que declares 2 variables (serán los operandos) y admita un argumento para seleccionar el tipo de operación a realizar mediante la estructura switch. El/la usuari@ puede elegir entre la operación de suma y la de multiplicación.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-4-escribe-un-script-que-muestre-los-numeros-del-15-al-1orden-descendente-mediante-un-bucle" class="md-nav__link">
+    Pregunta 4 - Escribe un script que muestre los números del 15 al 1(orden descendente) mediante un bucle.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-5-script-que-muestre-unicamente-las-palabras-en-plural-terminan-por-la-letra-s-de-la-siguiente-lista-casa-aceitunas-verdura-futbolista-pilas-cosas" class="md-nav__link">
+    Pregunta 5 - Script que muestre únicamente las palabras en plural (terminan por la letra s) de la siguiente lista: casa, aceitunas, verdura, futbolista, pilas, cosas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-repaso-recuperacion-21032022" class="md-nav__link">
+    Ejercicios repaso recuperación 21/03/2022
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios repaso recuperación 21/03/2022">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-script-que-pinte-todos-los-argumentos-mediante-un-bucle-con-la-siguiente-salida" class="md-nav__link">
+    1. Script que pinte todos los argumentos mediante un bucle con la siguiente salida:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-crea-una-lista-con-las-letras-del-abecedario" class="md-nav__link">
+    2. Crea una lista con las letras del abecedario:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-crea-un-script-que-convierta-una-nota-numerica-a-formato-texto" class="md-nav__link">
+    3. Crea un script que convierta una nota numérica a formato texto:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-crea-un-script-que-contenga-un-bucle-que-muestre-los-numeros-impares-del-1-al-19" class="md-nav__link">
+    4. Crea un script que contenga un bucle que muestre los números impares del 1 al 19
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-powershell" class="md-nav__link">
+    Comandos Powershell
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos Powershell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-item" class="md-nav__link">
+    New-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-item" class="md-nav__link">
+    Remove-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-item" class="md-nav__link">
+    Copy-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-item" class="md-nav__link">
+    Move-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compress-archive" class="md-nav__link">
+    Compress-Archive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expand-archive" class="md-nav__link">
+    Expand-Archive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-content" class="md-nav__link">
+    Add-Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-content" class="md-nav__link">
+    Get-Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-content" class="md-nav__link">
+    Clear-Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-date" class="md-nav__link">
+    Get-Date
+  </a>
+  
+    <nav class="md-nav" aria-label="Get-Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-resuelto" class="md-nav__link">
+    Ejercicio resuelto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-menu-simple-en-powershell" class="md-nav__link">
+    Ejemplo de menú simple en PowerShell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-una-cuenta-de-usuario-en-w10" class="md-nav__link">
+    Creación de una cuenta de usuario en W10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compartir-una-carpeta-en-w10" class="md-nav__link">
+    Compartir una carpeta en W10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu" class="md-nav__link">
+    Ubuntu
+  </a>
+  
+    <nav class="md-nav" aria-label="Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-una-carpeta" class="md-nav__link">
+    Creación de una carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-documento" class="md-nav__link">
+    Creación de un documento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminacion-de-un-documentocarpeta" class="md-nav__link">
+    Eliminación de un documento/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-documentocarpeta" class="md-nav__link">
+    Copiar documento/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mover-documentocarpeta" class="md-nav__link">
+    Mover documento/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprimir-archivoscarpetas" class="md-nav__link">
+    Comprimir archivos/carpetas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descomprimir-archivos-con-extension-targz-en-el-directorio-actual" class="md-nav__link">
+    Descomprimir archivos con extensión .tar.gz en el directorio actual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descomprimir-archivos-con-extension-targz-en-una-ruta-determinada" class="md-nav__link">
+    Descomprimir archivos con extensión .tar.gz en una ruta determinada
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-grupo-en-linux" class="md-nav__link">
+    Creación de un grupo en Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-usuario-en-linux" class="md-nav__link">
+    Creación de un usuario en Linux
+  </a>
+  
+    <nav class="md-nav" aria-label="Creación de un usuario en Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#establecer-la-contrasena" class="md-nav__link">
+    Establecer la contraseña
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-un-usuario-a-un-grupo" class="md-nav__link">
+    Añadir un usuario a un grupo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-los-permisos-de-los-archivoscarpetas-contenidos-en-el-directorio-actual" class="md-nav__link">
+    Listar los permisos de los archivos/carpetas contenidos en el directorio actual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-los-permisos-de-un-archivocarpeta" class="md-nav__link">
+    Establecer los permisos de un archivo/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-el-usuario-propietario-de-un-archivocarpeta" class="md-nav__link">
+    Establecer el usuario propietario de un archivo/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-el-grupo-propietario-de-un-archivocarpeta" class="md-nav__link">
+    Establecer el grupo propietario de un archivo/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programador-de-tareas-de-linux" class="md-nav__link">
+    Programador de tareas de Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esto-es-una-prueba-de-actions" class="md-nav__link">
+    Esto es una prueba de Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#programacion-estructurada-en-powershell" class="md-nav__link">
+    Programación estructurada en PowerShell
+  </a>
+  
+    <nav class="md-nav" aria-label="Programación estructurada en PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaracion-de-variables" class="md-nav__link">
+    Declaración de variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-y-salida" class="md-nav__link">
+    Entrada y salida
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argumentos-de-llamada-a-un-script-ps1" class="md-nav__link">
+    Argumentos de llamada a un script .ps1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-de-comparacion" class="md-nav__link">
+    Operadores de comparación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operaciones-logicas" class="md-nav__link">
+    Operaciones lógicas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentencias-condicionales" class="md-nav__link">
+    Sentencias condicionales
+  </a>
+  
+    <nav class="md-nav" aria-label="Sentencias condicionales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    IF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    IF-ELSE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elseif" class="md-nav__link">
+    ELSEIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch" class="md-nav__link">
+    SWITCH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bucles-sentencias-de-repeticion" class="md-nav__link">
+    Bucles (Sentencias de repetición)
+  </a>
+  
+    <nav class="md-nav" aria-label="Bucles (Sentencias de repetición)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#while" class="md-nav__link">
+    WHILE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-while" class="md-nav__link">
+    DO-WHILE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for" class="md-nav__link">
+    FOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foreach" class="md-nav__link">
+    FOREACH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-random" class="md-nav__link">
+    Función random
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funciones-de-cadenas-de-caracteres" class="md-nav__link">
+    Funciones de cadenas de caracteres
+  </a>
+  
+    <nav class="md-nav" aria-label="Funciones de cadenas de caracteres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#length" class="md-nav__link">
+    Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexof" class="md-nav__link">
+    IndexOf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace" class="md-nav__link">
+    Replace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insert" class="md-nav__link">
+    Insert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equals" class="md-nav__link">
+    Equals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-y-substring" class="md-nav__link">
+    Split y Substring
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-resueltos" class="md-nav__link">
+    Ejercicios resueltos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios resueltos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contador-de-1-a-10-utilizando-el-bucle-while" class="md-nav__link">
+    Contador de 1 a 10 utilizando el bucle WHILE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-de-temperatura-con-elseif" class="md-nav__link">
+    Sensor de temperatura con ELSEIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semaforo-con-switch" class="md-nav__link">
+    Semáforo con SWITCH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recorrer-una-lista-utilizando-el-bucle-for" class="md-nav__link">
+    Recorrer una lista utilizando el bucle FOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-n-elementos-de-una-lista-de-manera-aleatoria" class="md-nav__link">
+    Obtener N elementos de una lista de manera aleatoria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-si-una-letra-esta-presente-en-una-palabra" class="md-nav__link">
+    Comprobar si una letra está presente en una palabra
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-de-una-lista-las-palabras-que-comienzan-por-vocal" class="md-nav__link">
+    Eliminar de una lista las palabras que comienzan por vocal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-los-personajes-cuyo-nombre-y-apellido-comienzan-por-la-misma-letra" class="md-nav__link">
+    Mostrar los personajes cuyo nombre y apellido comienzan por la misma letra
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examen-07032022" class="md-nav__link">
+    Examen 07/03/2022
+  </a>
+  
+    <nav class="md-nav" aria-label="Examen 07/03/2022">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-1-escribe-un-script-que-reciba-3-argumentos-utiliza-args-le-preguntara-al-usuari-su-nombre-y-apellidos-y-se-lo-mostrara-por-pantalla-con-el-siguiente-formato-apellido1-apellido2-nombre" class="md-nav__link">
+    Pregunta 1 - Escribe un script que reciba 3 argumentos (utiliza $args): Le preguntará al usuari@ su nombre y apellidos y se lo mostrará por pantalla con el siguiente formato: apellido1 apellido2, nombre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-2-escribe-un-script-que-genere-un-numero-aleatorio-entre-0-y-50-si-el-numero-resultante-es-10-20-30-o-40-escribe-has-tenido-suerte" class="md-nav__link">
+    Pregunta 2 - Escribe un script que genere un número aleatorio entre 0 y 50. Si el número resultante es 10 20 30 o 40 escribe “¡Has tenido suerte!”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-3-escribe-un-script-calculadora-en-el-que-declares-2-variables-seran-los-operandos-y-admita-un-argumento-para-seleccionar-el-tipo-de-operacion-a-realizar-mediante-la-estructura-switch-ella-usuari-puede-elegir-entre-la-operacion-de-suma-y-la-de-multiplicacion" class="md-nav__link">
+    Pregunta 3 - Escribe un script calculadora en el que declares 2 variables (serán los operandos) y admita un argumento para seleccionar el tipo de operación a realizar mediante la estructura switch. El/la usuari@ puede elegir entre la operación de suma y la de multiplicación.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-4-escribe-un-script-que-muestre-los-numeros-del-15-al-1orden-descendente-mediante-un-bucle" class="md-nav__link">
+    Pregunta 4 - Escribe un script que muestre los números del 15 al 1(orden descendente) mediante un bucle.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregunta-5-script-que-muestre-unicamente-las-palabras-en-plural-terminan-por-la-letra-s-de-la-siguiente-lista-casa-aceitunas-verdura-futbolista-pilas-cosas" class="md-nav__link">
+    Pregunta 5 - Script que muestre únicamente las palabras en plural (terminan por la letra s) de la siguiente lista: casa, aceitunas, verdura, futbolista, pilas, cosas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-repaso-recuperacion-21032022" class="md-nav__link">
+    Ejercicios repaso recuperación 21/03/2022
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios repaso recuperación 21/03/2022">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-script-que-pinte-todos-los-argumentos-mediante-un-bucle-con-la-siguiente-salida" class="md-nav__link">
+    1. Script que pinte todos los argumentos mediante un bucle con la siguiente salida:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-crea-una-lista-con-las-letras-del-abecedario" class="md-nav__link">
+    2. Crea una lista con las letras del abecedario:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-crea-un-script-que-convierta-una-nota-numerica-a-formato-texto" class="md-nav__link">
+    3. Crea un script que convierta una nota numérica a formato texto:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-crea-un-script-que-contenga-un-bucle-que-muestre-los-numeros-impares-del-1-al-19" class="md-nav__link">
+    4. Crea un script que contenga un bucle que muestre los números impares del 1 al 19
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-powershell" class="md-nav__link">
+    Comandos Powershell
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos Powershell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-item" class="md-nav__link">
+    New-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-item" class="md-nav__link">
+    Remove-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-item" class="md-nav__link">
+    Copy-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-item" class="md-nav__link">
+    Move-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compress-archive" class="md-nav__link">
+    Compress-Archive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expand-archive" class="md-nav__link">
+    Expand-Archive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-content" class="md-nav__link">
+    Add-Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-content" class="md-nav__link">
+    Get-Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-content" class="md-nav__link">
+    Clear-Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-date" class="md-nav__link">
+    Get-Date
+  </a>
+  
+    <nav class="md-nav" aria-label="Get-Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-resuelto" class="md-nav__link">
+    Ejercicio resuelto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-menu-simple-en-powershell" class="md-nav__link">
+    Ejemplo de menú simple en PowerShell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-una-cuenta-de-usuario-en-w10" class="md-nav__link">
+    Creación de una cuenta de usuario en W10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compartir-una-carpeta-en-w10" class="md-nav__link">
+    Compartir una carpeta en W10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu" class="md-nav__link">
+    Ubuntu
+  </a>
+  
+    <nav class="md-nav" aria-label="Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-una-carpeta" class="md-nav__link">
+    Creación de una carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-documento" class="md-nav__link">
+    Creación de un documento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminacion-de-un-documentocarpeta" class="md-nav__link">
+    Eliminación de un documento/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-documentocarpeta" class="md-nav__link">
+    Copiar documento/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mover-documentocarpeta" class="md-nav__link">
+    Mover documento/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprimir-archivoscarpetas" class="md-nav__link">
+    Comprimir archivos/carpetas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descomprimir-archivos-con-extension-targz-en-el-directorio-actual" class="md-nav__link">
+    Descomprimir archivos con extensión .tar.gz en el directorio actual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descomprimir-archivos-con-extension-targz-en-una-ruta-determinada" class="md-nav__link">
+    Descomprimir archivos con extensión .tar.gz en una ruta determinada
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-grupo-en-linux" class="md-nav__link">
+    Creación de un grupo en Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-un-usuario-en-linux" class="md-nav__link">
+    Creación de un usuario en Linux
+  </a>
+  
+    <nav class="md-nav" aria-label="Creación de un usuario en Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#establecer-la-contrasena" class="md-nav__link">
+    Establecer la contraseña
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-un-usuario-a-un-grupo" class="md-nav__link">
+    Añadir un usuario a un grupo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-los-permisos-de-los-archivoscarpetas-contenidos-en-el-directorio-actual" class="md-nav__link">
+    Listar los permisos de los archivos/carpetas contenidos en el directorio actual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-los-permisos-de-un-archivocarpeta" class="md-nav__link">
+    Establecer los permisos de un archivo/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-el-usuario-propietario-de-un-archivocarpeta" class="md-nav__link">
+    Establecer el usuario propietario de un archivo/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-el-grupo-propietario-de-un-archivocarpeta" class="md-nav__link">
+    Establecer el grupo propietario de un archivo/carpeta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programador-de-tareas-de-linux" class="md-nav__link">
+    Programador de tareas de Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esto-es-una-prueba-de-actions" class="md-nav__link">
+    Esto es una prueba de Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="som">SOM</h1>
+<h2 id="programacion-estructurada-en-powershell">Programación estructurada en PowerShell</h2>
+<p>El primer paso que debemos realizar en nuestra máquina virtual de W10, es la ejecución del siguiente comando (en una ventana de powershell con permisos de administrador):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Set-ExecutionPolicy</span> <span class="n">Unrestricted</span>
+</code></pre></div></p>
+<h3 id="declaracion-de-variables">Declaración de variables</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$variable</span> <span class="p">=</span> <span class="n">valor</span>
+</code></pre></div>
+Por ejemplo:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">#System.Int32</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$entero</span> <span class="p">=</span> <span class="n">3</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c">#System.String</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nv">$cadenaDeCaracteres</span> <span class="p">=</span> <span class="s2">&quot;Hola&quot;</span> 
+</code></pre></div></p>
+<h3 id="entrada-y-salida">Entrada y salida</h3>
+<p>Para poder mostrar por pantalla el valor de una variable o de una operación utilizaremos la función:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Write-Host</span> <span class="nv">$variable</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">Write-Host</span> <span class="p">(</span><span class="nv">$operando1</span> <span class="p">+</span> <span class="nv">$operando2</span><span class="p">)</span>
+</code></pre></div>
+Para poder recibir valores por teclado (y asignarlos a una variable), utilizaremos la función:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$variable</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Mensaje&quot;</span>
+</code></pre></div>
+Por ejemplo:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="no">[int]</span><span class="nv">$edad</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Por favor, introduzca su edad&quot;</span>
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>La función <code>Read-Host</code> devuelve siempre una variable cadena de texto. Si queremos almacenar en nuestra variable un número entero tendremos que declararlo de forma explícita utilizando <code>[int]</code></p>
+</div>
+<h3 id="argumentos-de-llamada-a-un-script-ps1">Argumentos de llamada a un script .ps1</h3>
+<p>Podemos pasarle a nuestro script los valores que queramos como argumentos:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">./</span><span class="n">script</span><span class="p">.</span><span class="n">ps1</span> <span class="n">1</span> <span class="n">2</span> <span class="n">3</span>
+</code></pre></div>
+Dentro de nuestro script, podremos recuperar estos valores de la siguiente manera:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$primerNumero</span> <span class="p">=</span> <span class="nv">$args</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">$segundoNumero</span> <span class="p">=</span> <span class="nv">$args</span><span class="p">[</span><span class="n">1</span><span class="p">]</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">$tercerNumero</span> <span class="p">=</span> <span class="nv">$args</span><span class="p">[</span><span class="n">2</span><span class="p">]</span>
+</code></pre></div></p>
+<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
+<p>Estos operadores los utilizaremos tanto en las sentencias condicionales como en los bucles:</p>
+<p><strong>-eq</strong> (equal to):igual a</p>
+<p><strong>-lt</strong> (less than): menos que</p>
+<p><strong>-gt</strong> (greater than): más que</p>
+<p><strong>-ge</strong> (greater than or equal to): mayor o igual a</p>
+<p><strong>-le</strong> (less than or equal to): menor o igual a</p>
+<p><strong>-ne</strong> (not equal to): no es igual a</p>
+<h3 id="operaciones-logicas">Operaciones lógicas</h3>
+<p><strong>-and</strong> Permite relacionar varios predicados condicionales. Para que el predicado global sea verdadero, tienen que ser verdaderos todos los predicados relacionados.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="nv">$num1</span> <span class="o">-gt</span> <span class="n">5</span><span class="p">)</span> <span class="o">-and</span> <span class="p">(</span><span class="nv">$num2</span> <span class="o">-gt</span> <span class="n">5</span><span class="p">)</span> <span class="p">)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Los dos números son mayores que 5&quot;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
+</code></pre></div></p>
+<p><strong>-or</strong> Permite relacionar varios predicados condicionales. Para que el predicado global sea verdadero, tiene que ser verdadero, al menos uno de los predicados relacionados.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="nv">$num1</span> <span class="o">-gt</span> <span class="n">5</span><span class="p">)</span> <span class="o">-or</span> <span class="p">(</span><span class="nv">$num2</span> <span class="o">-gt</span> <span class="n">5</span><span class="p">)</span> <span class="p">)</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Al menos uno de los dos números son mayores que 5&quot;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
+</code></pre></div></p>
+<p><strong>-not</strong> Permite negar predicados condicionales.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">if</span> <span class="p">(</span> <span class="o">-not</span><span class="p">(</span><span class="nv">$num</span> <span class="o">-gt</span> <span class="n">5</span><span class="p">)</span> <span class="p">)</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="p">{</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;El número no es mayor que 5&quot;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
+</code></pre></div></p>
+<h3 id="sentencias-condicionales">Sentencias condicionales</h3>
+<h4 id="if">IF</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">$a</span><span class="p">=</span><span class="n">5</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">-eq</span> <span class="n">5</span><span class="p">)</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="p">{</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nb">Write-Host</span> <span class="s2">&quot;5&quot;</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="if-else">IF-ELSE</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nv">$a</span><span class="p">=</span><span class="n">5</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">-eq</span> <span class="n">5</span><span class="p">)</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p">{</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a tiene asignado el valor 5&quot;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="p">}</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="k">else</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="p">{</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a no tiene asignado el valor 5&quot;</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="elseif">ELSEIF</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$a</span><span class="p">=</span><span class="n">6</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">-eq</span> <span class="n">5</span><span class="p">)</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">{</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a tiene asignado el valor 5&quot;</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="p">}</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="k">elseif</span><span class="p">(</span><span class="nv">$a</span> <span class="o">-eq</span> <span class="n">6</span><span class="p">)</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="p">{</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a tiene asignado el valor 6&quot;</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="p">}</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="k">else</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="p">{</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a no tiene asignado ni el valor 5 ni el 6&quot;</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="switch">SWITCH</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">$a</span><span class="p">=</span><span class="n">5</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">switch</span><span class="p">(</span><span class="nv">$a</span><span class="p">)</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="p">{</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="n">5</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="p">{</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a tiene asignado el valor 5&quot;</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>        <span class="k">break</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>    <span class="p">}</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>    <span class="n">6</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>    <span class="p">{</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a tiene asignado el valor 6&quot;</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>        <span class="k">break</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>    <span class="p">}</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>    <span class="n">7</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>    <span class="p">{</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a tiene asignado el valor 7&quot;</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>        <span class="k">break</span>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>    <span class="p">}</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>    <span class="k">default</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>    <span class="p">{</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;La variable a no tiene asignado ni el valor 5 ni el 6 ni el 7&quot;</span>
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a>    <span class="p">}</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a>
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="bucles-sentencias-de-repeticion">Bucles (Sentencias de repetición)</h3>
+<h4 id="while">WHILE</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">$i</span><span class="p">=</span><span class="n">1</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">while</span><span class="p">(</span><span class="nv">$i</span> <span class="o">-le</span> <span class="n">10</span><span class="p">)</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">{</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="nv">$i</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="nv">$i</span><span class="p">++</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="do-while">DO-WHILE</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">$i</span><span class="p">=</span><span class="n">1</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">do</span><span class="p">{</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="nv">$i</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="nv">$i</span><span class="p">++</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="nv">$i</span> <span class="o">-le</span> <span class="n">10</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="for">FOR</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">for</span><span class="p">(</span><span class="nv">$i</span><span class="p">=</span><span class="n">1</span><span class="p">;</span><span class="nv">$i</span> <span class="o">-le</span> <span class="n">10</span><span class="p">;</span><span class="nv">$i</span><span class="p">++)</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="p">{</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="nv">$i</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="foreach">FOREACH</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">foreach</span><span class="p">(</span><span class="nv">$i</span> <span class="k">in</span> <span class="n">1</span><span class="p">..</span><span class="n">10</span><span class="p">)</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="p">{</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="nv">$i</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="funcion-random">Función random</h3>
+<p>La función Get-Random nos permite obtener valores aleatorios.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c">#Obtener un número aleatorio entre 0 y 100</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">Get-Random</span> <span class="n">-Minimum</span> <span class="n">0</span> <span class="n">-Maximum</span> <span class="n">100</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c">#Obtener dos colores aleatorios de la lista</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="s1">&#39;verde&#39;</span><span class="p">,</span> <span class="s1">&#39;amarillo&#39;</span><span class="p">,</span> <span class="s1">&#39;rojo&#39;</span><span class="p">,</span> <span class="s1">&#39;azul&#39;</span><span class="p">,</span> <span class="s1">&#39;negro&#39;</span><span class="p">,</span> <span class="s1">&#39;blanco&#39;</span> <span class="p">|</span> <span class="nb">Get-Random</span> <span class="n">-Count</span> <span class="n">2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c">#Reorganiza de forma aleatoria toda la lista de colores</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="s1">&#39;verde&#39;</span><span class="p">,</span> <span class="s1">&#39;amarillo&#39;</span><span class="p">,</span> <span class="s1">&#39;rojo&#39;</span><span class="p">,</span> <span class="s1">&#39;azul&#39;</span><span class="p">,</span> <span class="s1">&#39;negro&#39;</span><span class="p">,</span> <span class="s1">&#39;blanco&#39;</span> <span class="p">|</span> <span class="nb">Get-Random</span> <span class="n">-Shuffle</span>
+</code></pre></div>
+<h3 id="funciones-de-cadenas-de-caracteres">Funciones de cadenas de caracteres</h3>
+<h4 id="length">Length</h4>
+<p>Muestra la longitud de una cadena de caracteres
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nv">$c</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="nv">$c</span><span class="p">.</span><span class="n">length</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">4</span>
+</code></pre></div></p>
+<h4 id="indexof">IndexOf</h4>
+<p>Muestra la posición de la primera ocurrencia de un carácter dentro de una cadena de texto. En caso de que el carácter no esté dentro de la cadena de texto devuelve -1.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nv">$c</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nv">$c</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="n">0</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="nv">$c</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="n">2</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="nv">$c</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="p">-</span><span class="n">1</span>
+</code></pre></div></p>
+<h4 id="replace">Replace</h4>
+<p>Reemplaza una sección de una cadena de caracteres por otra.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nv">$c</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="nv">$c</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ca&#39;</span><span class="p">,</span><span class="s1">&#39;pa&#39;</span><span class="p">)</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="n">pasa</span>
+</code></pre></div></p>
+<h4 id="insert">Insert</h4>
+<p>Introduce en una posición de una cadena de texto, otra cadena de texto.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nv">$c</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="nv">$c</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">4</span><span class="p">.</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="n">casas</span>
+</code></pre></div></p>
+<h4 id="equals">Equals</h4>
+<p>Evalúa si una cadena de caracteres es igual a otra. Devuelve los valores booleanos True o False.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nv">$c</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="nv">$c1</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="nv">$c2</span> <span class="p">=</span> <span class="s1">&#39;pasa&#39;</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="nv">$c</span><span class="p">.</span><span class="n">equals</span><span class="p">(</span><span class="s1">&#39;casa&#39;</span><span class="p">)</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="n">True</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="nv">$c</span><span class="p">.</span><span class="n">equals</span><span class="p">(</span><span class="s1">&#39;pasa&#39;</span><span class="p">)</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="n">False</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="nv">$c</span><span class="p">.</span><span class="n">equals</span><span class="p">(</span><span class="nv">$c2</span><span class="p">)</span>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="n">False</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="nv">$c</span><span class="p">.</span><span class="n">equals</span><span class="p">(</span><span class="nv">$c1</span><span class="p">)</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="n">True</span>
+</code></pre></div></p>
+<h4 id="split-y-substring">Split y Substring</h4>
+<p>Lo veremos en próximos capítulos.</p>
+<h2 id="ejercicios-resueltos">Ejercicios resueltos</h2>
+<h3 id="contador-de-1-a-10-utilizando-el-bucle-while">Contador de 1 a 10 utilizando el bucle WHILE</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="nv">$i</span> <span class="p">=</span> <span class="n">1</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="k">while</span><span class="p">(</span><span class="nv">$i</span> <span class="o">-le</span> <span class="n">10</span><span class="p">)</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="p">{</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="nb">Write-Host</span><span class="p">(</span><span class="nv">$i</span><span class="p">)</span> 
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>    <span class="nv">$i</span><span class="p">++</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="sensor-de-temperatura-con-elseif">Sensor de temperatura con ELSEIF</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="no">[int]</span><span class="nv">$temp</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Por favor, introduzca la temperatura&quot;</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$temp</span> <span class="o">-le</span> <span class="n">10</span><span class="p">)</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="p">{</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Frío&quot;</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="p">}</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="k">elseif</span> <span class="p">(</span><span class="nv">$temp</span> <span class="o">-gt</span> <span class="n">10</span> <span class="o">-and</span> <span class="nv">$temp</span> <span class="o">-le</span> <span class="n">18</span><span class="p">)</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="p">{</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Fresquito&quot;</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="p">}</span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="k">elseif</span> <span class="p">(</span><span class="nv">$temp</span> <span class="o">-gt</span> <span class="n">18</span> <span class="o">-and</span> <span class="nv">$temp</span> <span class="o">-le</span> <span class="n">24</span><span class="p">)</span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="p">{</span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Temperatura agradable&quot;</span>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="p">}</span>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="k">else</span>
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="p">{</span>
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Calor&quot;</span>
+<a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="semaforo-con-switch">Semáforo con SWITCH</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nv">$color</span> <span class="p">=</span> <span class="nv">$args</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="k">switch</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="p">{</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    <span class="s1">&#39;verde&#39;</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>    <span class="p">{</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;Pasar&quot;</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>        <span class="k">break</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>    <span class="p">}</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>    <span class="s1">&#39;amarillo&#39;</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>    <span class="p">{</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;Precaución&quot;</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>        <span class="k">break</span>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>    <span class="p">}</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>    <span class="s1">&#39;rojo&#39;</span>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>    <span class="p">{</span>
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;Parar&quot;</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>        <span class="k">break</span>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>    <span class="p">}</span>
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>    <span class="k">default</span>
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>    <span class="p">{</span>
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;Color inválido&quot;</span>
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>    <span class="p">}</span>
+<a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="recorrer-una-lista-utilizando-el-bucle-for">Recorrer una lista utilizando el bucle FOR</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="nv">$frutas</span> <span class="p">=</span> <span class="s1">&#39;fresa&#39;</span><span class="p">,</span> <span class="s1">&#39;manzana&#39;</span><span class="p">,</span> <span class="s1">&#39;platano&#39;</span><span class="p">,</span> <span class="s1">&#39;melon&#39;</span><span class="p">,</span> <span class="s1">&#39;naranja&#39;</span><span class="p">,</span> <span class="s1">&#39;limon&#39;</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="p">=</span><span class="n">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-lt</span> <span class="nv">$frutas</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="p">{</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>    <span class="nb">Write-Host</span> <span class="nv">$frutas</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="obtener-n-elementos-de-una-lista-de-manera-aleatoria">Obtener N elementos de una lista de manera aleatoria</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nv">$frutas</span> <span class="p">=</span> <span class="s1">&#39;fresa&#39;</span><span class="p">,</span> <span class="s1">&#39;manzana&#39;</span><span class="p">,</span> <span class="s1">&#39;platano&#39;</span><span class="p">,</span> <span class="s1">&#39;melon&#39;</span><span class="p">,</span> <span class="s1">&#39;naranja&#39;</span><span class="p">,</span> <span class="s1">&#39;limon&#39;</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="no">[int]</span><span class="nv">$numFrutas</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;¿Cuántas frutas quiere?&quot;</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="nv">$frutas</span> <span class="p">|</span> <span class="nb">Get-Random</span> <span class="n">-Count</span> <span class="nv">$numFrutas</span>
+</code></pre></div>
+<h3 id="comprobar-si-una-letra-esta-presente-en-una-palabra">Comprobar si una letra está presente en una palabra</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nv">$palabra</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="nv">$letra</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Por favor, introduzca una letra&quot;</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$palabra</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="nv">$letra</span><span class="p">)</span> <span class="o">-ne</span> <span class="p">-</span><span class="n">1</span> <span class="p">)</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="p">{</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;La letra está presente en la palabra&quot;</span>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="p">}</span>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="k">else</span>
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="p">{</span>
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;La letra NO está presente en la palabra&quot;</span>    
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="eliminar-de-una-lista-las-palabras-que-comienzan-por-vocal">Eliminar de una lista las palabras que comienzan por vocal</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nv">$alumnos</span> <span class="p">=</span> <span class="s1">&#39;Iker&#39;</span><span class="p">,</span> <span class="s1">&#39;Desirée&#39;</span><span class="p">,</span> <span class="s1">&#39;Andrei&#39;</span><span class="p">,</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s1">&#39;Aitor&#39;</span><span class="p">,</span> <span class="s1">&#39;Manuel&#39;</span><span class="p">,</span> <span class="s1">&#39;Mario&#39;</span><span class="p">,</span> <span class="s1">&#39;Daniel&#39;</span><span class="p">,</span> <span class="s1">&#39;Edwar&#39;</span><span class="p">,</span> <span class="s1">&#39;Nicolás&#39;</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="p">=</span><span class="n">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-lt</span> <span class="nv">$alumnos</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="p">{</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>    <span class="nv">$alumno</span> <span class="p">=</span> <span class="nv">$alumnos</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>    <span class="nv">$pl</span> <span class="p">=</span> <span class="nv">$alumno</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$pl</span> <span class="o">-eq</span> <span class="s1">&#39;a&#39;</span> <span class="o">-or</span> <span class="nv">$pl</span> <span class="o">-eq</span> <span class="s1">&#39;e&#39;</span> <span class="o">-or</span> <span class="nv">$pl</span> <span class="o">-eq</span> <span class="s1">&#39;i&#39;</span> <span class="o">-or</span> <span class="nv">$pl</span> <span class="o">-eq</span> <span class="s1">&#39;o&#39;</span> <span class="o">-or</span> <span class="nv">$pl</span> <span class="o">-eq</span> <span class="s1">&#39;u&#39;</span><span class="p">)</span>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>    <span class="p">{</span>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a>        <span class="nv">$alumnos</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span> <span class="p">=</span> <span class="s1">&#39;----&#39;</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a>    <span class="p">}</span>
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a><span class="p">}</span>
+<a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="nv">$alumnos</span>
+</code></pre></div>
+<h3 id="mostrar-los-personajes-cuyo-nombre-y-apellido-comienzan-por-la-misma-letra">Mostrar los personajes cuyo nombre y apellido comienzan por la misma letra</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nv">$personajes</span> <span class="p">=</span> <span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Hercule Poirot&#39;</span><span class="p">,</span> <span class="s1">&#39;Stephen Strange&#39;</span><span class="p">,</span> <span class="s1">&#39;Harry Potter&#39;</span><span class="p">,</span> <span class="s1">&#39;Reed Richards&#39;</span><span class="p">,</span> <span class="s1">&#39;Matt Murdock&#39;</span><span class="p">,</span> <span class="s1">&#39;Oliver Twist&#39;</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="nv">$personaje</span> <span class="p">=</span> <span class="s1">&#39;&#39;</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="nv">$espacio</span> <span class="p">=</span> <span class="p">-</span><span class="n">1</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="nv">$primeraLetraNombre</span> <span class="p">=</span> <span class="s1">&#39;&#39;</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="p">=</span><span class="n">0</span><span class="p">;</span><span class="nv">$i</span> <span class="o">-lt</span> <span class="nv">$personajes</span><span class="p">.</span><span class="n">length</span><span class="p">;</span><span class="nv">$i</span><span class="p">++)</span>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="p">{</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>    <span class="nv">$personaje</span> <span class="p">=</span> <span class="nv">$personajes</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span>
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>    <span class="nv">$primeraLetraNombre</span> <span class="p">=</span> <span class="nv">$personaje</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>    <span class="k">for</span> <span class="p">(</span><span class="nv">$j</span> <span class="p">=</span> <span class="n">0</span><span class="p">;</span> <span class="nv">$j</span> <span class="o">-lt</span> <span class="nv">$personaje</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="nv">$j</span><span class="p">++)</span>
+<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>    <span class="p">{</span>
+<a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a>        <span class="k">if</span> <span class="p">(</span><span class="nv">$personaje</span><span class="p">[</span><span class="nv">$j</span><span class="p">]</span> <span class="o">-eq</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+<a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a>        <span class="p">{</span>
+<a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a>                <span class="nv">$espacio</span> <span class="p">=</span> <span class="nv">$j</span>
+<a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a>        <span class="p">}</span>
+<a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a>    <span class="p">}</span>
+<a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$primeraLetraNombre</span> <span class="o">-eq</span> <span class="nv">$personaje</span><span class="p">[</span><span class="nv">$espacio</span> <span class="p">+</span> <span class="n">1</span><span class="p">])</span>
+<a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a>    <span class="p">{</span>
+<a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a>        <span class="nb">Write-Host</span> <span class="nv">$personaje</span>
+<a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a>    <span class="p">}</span>
+<a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="examen-07032022">Examen 07/03/2022</h2>
+<h3 id="pregunta-1-escribe-un-script-que-reciba-3-argumentos-utiliza-args-le-preguntara-al-usuari-su-nombre-y-apellidos-y-se-lo-mostrara-por-pantalla-con-el-siguiente-formato-apellido1-apellido2-nombre">Pregunta 1 - Escribe un script que reciba 3 argumentos (utiliza $args): Le preguntará al usuari@ su nombre y apellidos y se lo mostrará por pantalla con el siguiente formato: apellido1 apellido2, nombre</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nb">Write-Host</span> <span class="nv">$args</span><span class="p">[</span><span class="n">1</span><span class="p">]</span> <span class="nv">$args</span><span class="p">[</span><span class="n">2</span><span class="p">]</span><span class="s1">&#39;,&#39;</span><span class="nv">$args</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+</code></pre></div>
+(Alternativa) Utilizando Read-Host y 3 variables
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="nv">$nombre</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Introduzca su nombre&quot;</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="nv">$apell1</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Introduzca 1er apellido&quot;</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="nv">$apell2</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Introduzca 2º apellido&quot;</span>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="nb">Write-Host</span> <span class="nv">$apell1</span> <span class="nv">$apell2</span><span class="s1">&#39;, &#39;</span><span class="nv">$nombre</span>
+</code></pre></div></p>
+<h3 id="pregunta-2-escribe-un-script-que-genere-un-numero-aleatorio-entre-0-y-50-si-el-numero-resultante-es-10-20-30-o-40-escribe-has-tenido-suerte">Pregunta 2 - Escribe un script que genere un número aleatorio entre 0 y 50. Si el número resultante es 10 20 30 o 40 escribe “¡Has tenido suerte!”</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="nv">$num</span> <span class="p">=</span> <span class="nb">Get-Random</span> <span class="n">-Minimum</span> <span class="n">0</span> <span class="n">-Maximum</span> <span class="n">50</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$num</span> <span class="o">-eq</span> <span class="n">10</span> <span class="o">-or</span> <span class="nv">$num</span> <span class="o">-eq</span> <span class="n">20</span> <span class="o">-or</span> <span class="nv">$num</span> <span class="o">-eq</span> <span class="n">30</span> <span class="o">-or</span> <span class="nv">$num</span> <span class="o">-eq</span> <span class="n">40</span><span class="p">)</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="p">{</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Has tenido suerte&quot;</span>  
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="pregunta-3-escribe-un-script-calculadora-en-el-que-declares-2-variables-seran-los-operandos-y-admita-un-argumento-para-seleccionar-el-tipo-de-operacion-a-realizar-mediante-la-estructura-switch-ella-usuari-puede-elegir-entre-la-operacion-de-suma-y-la-de-multiplicacion">Pregunta 3 - Escribe un script calculadora en el que declares 2 variables (serán los operandos) y admita un argumento para seleccionar el tipo de operación a realizar mediante la estructura switch. El/la usuari@ puede elegir entre la operación de suma y la de multiplicación.</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="nv">$op1</span> <span class="p">=</span> <span class="n">2</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="nv">$op2</span> <span class="p">=</span> <span class="n">3</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="nv">$op</span> <span class="p">=</span> <span class="nv">$args</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="k">switch</span><span class="p">(</span><span class="nv">$op</span><span class="p">)</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="p">{</span>
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="p">+</span>
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>    <span class="p">{</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>        <span class="nb">Write-Host</span> <span class="p">(</span><span class="nv">$op1</span> <span class="p">+</span> <span class="nv">$op2</span><span class="p">)</span>
+<a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a>        <span class="k">break</span>
+<a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a>    <span class="p">}</span>
+<a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a><span class="p">*</span>
+<a id="__codelineno-38-12" name="__codelineno-38-12" href="#__codelineno-38-12"></a>    <span class="p">{</span>
+<a id="__codelineno-38-13" name="__codelineno-38-13" href="#__codelineno-38-13"></a>        <span class="nb">Write-Host</span> <span class="p">(</span><span class="nv">$op1</span> <span class="p">*</span> <span class="nv">$op2</span><span class="p">)</span>
+<a id="__codelineno-38-14" name="__codelineno-38-14" href="#__codelineno-38-14"></a>        <span class="k">break</span>
+<a id="__codelineno-38-15" name="__codelineno-38-15" href="#__codelineno-38-15"></a>    <span class="p">}</span>
+<a id="__codelineno-38-16" name="__codelineno-38-16" href="#__codelineno-38-16"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="pregunta-4-escribe-un-script-que-muestre-los-numeros-del-15-al-1orden-descendente-mediante-un-bucle">Pregunta 4 - Escribe un script que muestre los números del 15 al 1(orden descendente) mediante un bucle.</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="p">=</span> <span class="n">15</span><span class="p">;</span><span class="nv">$i</span> <span class="o">-gt</span> <span class="n">0</span><span class="p">;</span><span class="nv">$i</span><span class="p">--)</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="p">{</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>    <span class="nb">Write-Host</span> <span class="nv">$i</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="pregunta-5-script-que-muestre-unicamente-las-palabras-en-plural-terminan-por-la-letra-s-de-la-siguiente-lista-casa-aceitunas-verdura-futbolista-pilas-cosas">Pregunta 5 - Script que muestre únicamente las palabras en plural (terminan por la letra s) de la siguiente lista: casa, aceitunas, verdura, futbolista, pilas, cosas</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="nv">$lista</span> <span class="p">=</span> <span class="s1">&#39;casa&#39;</span><span class="p">,</span> <span class="s1">&#39;aceitunas&#39;</span><span class="p">,</span> <span class="s1">&#39;verdura&#39;</span><span class="p">,</span> <span class="s1">&#39;futbolista&#39;</span><span class="p">,</span> <span class="s1">&#39;pilas&#39;</span><span class="p">,</span> <span class="s1">&#39;cosas&#39;</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="p">=</span> <span class="n">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-lt</span> <span class="nv">$lista</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span>
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="p">{</span>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>    <span class="nv">$palabra</span> <span class="p">=</span> <span class="nv">$lista</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span>
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$palabra</span><span class="p">[</span><span class="nv">$palabra</span><span class="p">.</span><span class="n">length</span><span class="p">-</span><span class="n">1</span><span class="p">]</span> <span class="o">-eq</span> <span class="s1">&#39;s&#39;</span><span class="p">)</span>
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>    <span class="p">{</span>
+<a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>        <span class="nb">Write-Host</span> <span class="nv">$palabra</span> 
+<a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>    <span class="p">}</span>
+<a id="__codelineno-40-9" name="__codelineno-40-9" href="#__codelineno-40-9"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="ejercicios-repaso-recuperacion-21032022">Ejercicios repaso recuperación 21/03/2022</h2>
+<h3 id="1-script-que-pinte-todos-los-argumentos-mediante-un-bucle-con-la-siguiente-salida">1. Script que pinte todos los argumentos mediante un bucle con la siguiente salida:</h3>
+<p>Argumento 1 - valorArgumento1
+Argumento 2 - valorArgumento2
+Argumento 3 - valorArgumento3
+Argumento N - valorArgumentoN</p>
+<h3 id="2-crea-una-lista-con-las-letras-del-abecedario">2. Crea una lista con las letras del abecedario:</h3>
+<ul>
+<li>En una primera versión: Muestra la primera, la quinta y la octava letra.
+En una segunda versión:</li>
+<li>Pregúntale al usuari@ cuantas letras aleatorias quiere obtener. </li>
+<li>Si alguna de las letras obtenidas es una vocal, muestra el siguiente mensaje: Has tenido suerte!</li>
+</ul>
+<h3 id="3-crea-un-script-que-convierta-una-nota-numerica-a-formato-texto">3. Crea un script que convierta una nota numérica a formato texto:</h3>
+<ul>
+<li>Si la nota es menor que 5 - Escribe suspenso</li>
+<li>Si la nota es mayor o igual a 5 y menor que 6 - Escribe aprobado</li>
+<li>Si la nota es mayor o igual a 6 y menor que 7 - Escribe bien</li>
+<li>Si la nota es mayor o igual a 7 y menor que 9 - Escribe notable</li>
+<li>Si la nota es mayor o igual a 9 y menor que 10 - Escribe sobresaliente</li>
+<li>Si la nota es igual a 10 - Escribe Matrícula de honor</li>
+<li>Si la nota está fuera de estos rangos - Escribe valor inválido</li>
+</ul>
+<h3 id="4-crea-un-script-que-contenga-un-bucle-que-muestre-los-numeros-impares-del-1-al-19">4. Crea un script que contenga un bucle que muestre los números impares del 1 al 19</h3>
+<h2 id="comandos-powershell">Comandos Powershell</h2>
+<h3 id="new-item">New-Item</h3>
+<p>Nos permite crear ficheros <code>-ItemType "file"</code> y carpetas <code>-ItemType "directory"</code> especificando la ruta del nuevo elemento mediante -Path.
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.2#example-1-create-a-file-in-the-current-directory">Ejemplos</a></p>
+<h3 id="remove-item">Remove-Item</h3>
+<p>Permite eliminar ficheros y carpetas.
+<a href="https://docs.microsoft.com/es-es/powershell/scripting/samples/manipulating-items-directly?view=powershell-7.2#deleting-items-remove-item">Ejemplos</a></p>
+<h3 id="copy-item">Copy-Item</h3>
+<p>Permite copiar ficheros y carpetas en nuestro sistema de archivos.
+<a href="https://docs.microsoft.com/es-es/powershell/scripting/samples/manipulating-items-directly?view=powershell-7.2#copying-items-copy-item">Ejemplos</a></p>
+<h3 id="move-item">Move-Item</h3>
+<p>Permite mover ficheros y carpetas en nuestro sistema de archivos.
+<a href="https://docs.microsoft.com/es-es/powershell/scripting/samples/manipulating-items-directly?view=powershell-7.2#moving-items-move-item">Ejemplos</a></p>
+<h3 id="compress-archive">Compress-Archive</h3>
+<p>Nos permite comprimir archivos y carpetas.
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/compress-archive?view=powershell-7.2#example-3-compress-a-directory-that-includes-the-root-directory">Ejemplos</a></p>
+<h3 id="expand-archive">Expand-Archive</h3>
+<p>Nos permite descomprimir archivos .zip.
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-7.2#example-2-extract-the-contents-of-an-archive-in-the-current-folder">Ejemplo</a></p>
+<h3 id="add-content">Add-Content</h3>
+<p>Nos permite añadir texto <code>-Value</code> a un fichero <code>-Path</code>.
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/add-content?view=powershell-7.2">Ejemplos</a></p>
+<h3 id="get-content">Get-Content</h3>
+<p>Permite visualizar el contenido de un fichero de texto.
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.2">Ejemplos</a></p>
+<h3 id="clear-content">Clear-Content</h3>
+<p>Permite eliminar el contenido de un fichero de texto.
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/clear-content?view=powershell-7.2">Ejemplos</a></p>
+<h3 id="get-date">Get-Date</h3>
+<p>Muestra la fecha actual en distintos formatos
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.2">Ejemplos</a></p>
+<h4 id="ejercicio-resuelto">Ejercicio resuelto</h4>
+<ol>
+<li>Crea la carpeta ejercicioRepaso en el escritorio con el siguiente contenido:<br />
+uno.txt<br />
+dos.html<br />
+tres.txt<br />
+cuatro.html
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">ejercicioRepaso</span> <span class="n">-ItemType</span> <span class="s2">&quot;directory&quot;</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">ejercicioRepaso</span><span class="p">\</span><span class="n">uno</span><span class="p">.</span><span class="n">txt</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">ejercicioRepaso</span><span class="p">\</span><span class="n">dos</span><span class="p">.</span><span class="n">html</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">ejercicioRepaso</span><span class="p">\</span><span class="n">tres</span><span class="p">.</span><span class="n">txt</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">ejercicioRepaso</span><span class="p">\</span><span class="n">cuatro</span><span class="p">.</span><span class="n">html</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+</code></pre></div></li>
+<li>Crea una carpeta en Documentos llamada web y copia los archivos .html de ejercicioRepaso a esta nueva carpeta:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">web</span> <span class="n">-ItemType</span> <span class="s2">&quot;directory&quot;</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="nb">Copy-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">ejercicioRepaso</span><span class="p">\*.</span><span class="n">html</span> <span class="n">-Destination</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">web</span>
+</code></pre></div></li>
+<li>Comprime la carpeta web en Documentos:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="nb">Compress-Archive</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">web</span><span class="p">\*</span> <span class="n">-DestinationPath</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">web</span><span class="p">.</span><span class="n">zip</span>
+</code></pre></div></li>
+<li>Mueve la carpeta web.zip de Documentos a Escritorio:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="nb">Move-Item</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">web</span><span class="p">.</span><span class="n">zip</span> <span class="n">-Destination</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span>
+</code></pre></div></li>
+<li>Elimina la carpeta web (y todo su contenido) de Documentos:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="nb">Remove-Item</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Documents</span><span class="p">\</span><span class="n">web</span> <span class="n">-Recurse</span>
+</code></pre></div></li>
+<li>Descomprime web.zip (en el Escritorio):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="nb">Expand-Archive</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">web</span><span class="p">.</span><span class="n">zip</span> <span class="n">-DestinationPath</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">usuario</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">web</span>
+</code></pre></div></li>
+</ol>
+<h3 id="ejemplo-de-menu-simple-en-powershell">Ejemplo de menú simple en PowerShell</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="no">[int]</span><span class="nv">$opcion</span> <span class="p">=</span> <span class="p">-</span><span class="n">1</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="k">while</span> <span class="p">(</span><span class="nv">$opcion</span> <span class="o">-ne</span> <span class="n">4</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a><span class="nb">Write-Host</span> <span class="s2">&quot;1. Opción 1&quot;</span>
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a><span class="nb">Write-Host</span> <span class="s2">&quot;2. Opción 2&quot;</span>
+<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a><span class="nb">Write-Host</span> <span class="s2">&quot;3. Opción 3&quot;</span>
+<a id="__codelineno-47-6" name="__codelineno-47-6" href="#__codelineno-47-6"></a><span class="nb">Write-Host</span> <span class="s2">&quot;4. Salir&quot;</span>
+<a id="__codelineno-47-7" name="__codelineno-47-7" href="#__codelineno-47-7"></a><span class="nv">$opcion</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Seleccione una opción&quot;</span>
+<a id="__codelineno-47-8" name="__codelineno-47-8" href="#__codelineno-47-8"></a>    <span class="k">switch</span> <span class="p">(</span><span class="nv">$opcion</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-47-9" name="__codelineno-47-9" href="#__codelineno-47-9"></a>        <span class="n">1</span><span class="p">{</span><span class="nb">Write-Host</span> <span class="s2">&quot;Seleccionaste la opcion 1&quot;</span><span class="p">}</span>
+<a id="__codelineno-47-10" name="__codelineno-47-10" href="#__codelineno-47-10"></a>        <span class="n">2</span><span class="p">{</span><span class="nb">Write-Host</span> <span class="s2">&quot;Seleccionaste la opcion 2&quot;</span><span class="p">}</span>
+<a id="__codelineno-47-11" name="__codelineno-47-11" href="#__codelineno-47-11"></a>        <span class="n">3</span><span class="p">{</span><span class="nb">Write-Host</span> <span class="s2">&quot;Seleccionaste la opcion 3&quot;</span><span class="p">}</span>
+<a id="__codelineno-47-12" name="__codelineno-47-12" href="#__codelineno-47-12"></a>        <span class="n">4</span><span class="p">{</span><span class="nb">Write-Host</span> <span class="s2">&quot;Saliendo del script...&quot;</span><span class="p">}</span>
+<a id="__codelineno-47-13" name="__codelineno-47-13" href="#__codelineno-47-13"></a>    <span class="p">}</span>
+<a id="__codelineno-47-14" name="__codelineno-47-14" href="#__codelineno-47-14"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="creacion-de-una-cuenta-de-usuario-en-w10">Creación de una cuenta de usuario en W10</h3>
+<p>Paso 1:<br />
+<img alt="Cuenta usuario imagen 1" src="../img/1.PNG" /><br />
+Paso 2:<br />
+<img alt="Cuenta usuario imagen 2" src="../img/2.PNG" /><br />
+Paso 3:<br />
+<img alt="Cuenta usuario imagen 3" src="../img/3.PNG" /><br />
+Paso 4:<br />
+<img alt="Cuenta usuario imagen 4" src="../img/4.PNG" /><br />
+Paso 5:<br />
+<img alt="Cuenta usuario imagen 5" src="../img/5.PNG" /></p>
+<h3 id="compartir-una-carpeta-en-w10">Compartir una carpeta en W10</h3>
+<p>Paso 1:<br />
+Click derecho ratón encima de la carpeta a compartir -&gt; Propiedades<br />
+<img alt="Compartir carpeta imagen 1" src="../img/11.PNG" /><br />
+Paso 2:<br />
+1. Seleccionamos el usuario con el que queremos compartir la carpeta.<br />
+2. Clickamos en el botón agregar.<br />
+3. Clickamos en el botón compartir.<br />
+<img alt="Compartir carpeta imagen 2" src="../img/12.PNG" /></p>
+<h2 id="ubuntu">Ubuntu</h2>
+<h3 id="creacion-de-una-carpeta">Creación de una carpeta</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>mkdir nombreCarpeta
+</code></pre></div>
+<h3 id="creacion-de-un-documento">Creación de un documento</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>touch nombreDocumento
+</code></pre></div>
+<h3 id="eliminacion-de-un-documentocarpeta">Eliminación de un documento/carpeta</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>rm nombreDocumento
+</code></pre></div>
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R</p>
+<h3 id="copiar-documentocarpeta">Copiar documento/carpeta</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>cp rutaOrigen rutaDestino
+</code></pre></div>
+<h3 id="mover-documentocarpeta">Mover documento/carpeta</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>mv rutaOrigen rutaDestino
+</code></pre></div>
+<h3 id="comprimir-archivoscarpetas">Comprimir archivos/carpetas</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>tar czf rutaDestino.tar.gz rutaOrigen/*
+</code></pre></div>
+<h3 id="descomprimir-archivos-con-extension-targz-en-el-directorio-actual">Descomprimir archivos con extensión .tar.gz en el directorio actual</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>tar xf rutaFicheroComprimido
+</code></pre></div>
+<h3 id="descomprimir-archivos-con-extension-targz-en-una-ruta-determinada">Descomprimir archivos con extensión .tar.gz en una ruta determinada</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>tar xfC rutaFicheroComprimido rutaDestino
+</code></pre></div>
+<h3 id="creacion-de-un-grupo-en-linux">Creación de un grupo en Linux</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>sudo groupadd nombreGrupo
+</code></pre></div>
+Podemos consultar los grupos existentes en nuestra sistema en /etc/group</p>
+<h3 id="creacion-de-un-usuario-en-linux">Creación de un usuario en Linux</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>sudo useradd -m nombreUsuario -G nombreGrupo -s /bin/bash
+</code></pre></div>
+Parámetros opcionales:<br />
+<code>-m</code> crea una carpeta home para el nuevo usuario en /home/nombreUsuario<br />
+<code>-G</code> añade al usuario recién creado a un grupo que exista en el sistema<br />
+<code>-s</code> Estable la terminal por defecto del usuario <br />
+Podemos consultar los usuarios existentes en nuestra sistema en /etc/passwd</p>
+<h4 id="establecer-la-contrasena">Establecer la contraseña</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>sudo passwd nombreUsuario
+</code></pre></div>
+<h4 id="anadir-un-usuario-a-un-grupo">Añadir un usuario a un grupo</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>sudo usermod -aG nombreGrupo nombreusuario
+</code></pre></div>
+<h3 id="listar-los-permisos-de-los-archivoscarpetas-contenidos-en-el-directorio-actual">Listar los permisos de los archivos/carpetas contenidos en el directorio actual</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>ls -l
+</code></pre></div>
+<h3 id="establecer-los-permisos-de-un-archivocarpeta">Establecer los permisos de un archivo/carpeta</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>sudo chmod NNN nombreArchivo/nombreCarpeta
+</code></pre></div>
+<a href="https://linuxize.com/post/chmod-command-in-linux/#numeric-method">Explicación + Ejemplos</a><br />
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R</p>
+<h3 id="establecer-el-usuario-propietario-de-un-archivocarpeta">Establecer el usuario propietario de un archivo/carpeta</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>sudo chown nombreUsuario nombreArchivo/nombreCarpeta
+</code></pre></div>
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R</p>
+<h3 id="establecer-el-grupo-propietario-de-un-archivocarpeta">Establecer el grupo propietario de un archivo/carpeta</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>sudo chgrp nombreGrupo nombreArchivo/nombreCarpeta
+</code></pre></div>
+En caso de querer utilizar este comando con una carpeta, debemos incluir el argumento -R</p>
+<h3 id="programador-de-tareas-de-linux">Programador de tareas de Linux</h3>
+<p><a href="https://linuxize.com/post/scheduling-cron-jobs-with-crontab/">Explicación + Ejemplos</a></p>
+<h3 id="esto-es-una-prueba-de-actions">Esto es una prueba de Actions</h3>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
